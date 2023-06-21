@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .scoreboard {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .team {
+    text-align: center;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 18px;
+  }

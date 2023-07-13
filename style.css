@@ -1,6 +1,10 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: darkgrey;
+  background-color: black;
+  display: inline;
+  background: url("./img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
 }
 
 button {
@@ -15,21 +19,23 @@ table {
 
 h1 {
   text-align: center;
+  font-family:'Microsoft YaHei';
+  color:aliceblue;
 }
 
 .score {
   background-color: beige;
   color: brown;
   width: 60px;
-  height: 60px;
+  height: 70px;
   line-height: 40px;
   font-size: xx-large;
 }
 
 .inning {
   background-color: honeydew;
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 70px;
   line-height: 40px;
   align-items: center;
   text-align: center;
@@ -39,8 +45,7 @@ h1 {
 .ball {
   background-color: palegoldenrod;
   width: 30px;
-  height: 60px;
-  line-height: 40px;
+  height: 50px;
   align-items: center;
   text-align: center;
   font-size: x-large;
@@ -56,7 +61,6 @@ th[scope="score"] {
 
 th[scope="inning"] {
   background-color: honeydew;
-  width: 60px;
   height: 60px;
   line-height: 40px;
   align-items: center;
@@ -65,7 +69,6 @@ th[scope="inning"] {
 
 th[scope="out"] {
   background-color: lightblue;
-  width: 60px;
   height: 60px;
   line-height: 40px;
   align-items: center;
@@ -74,8 +77,6 @@ th[scope="out"] {
 
 th[scope="ball"] {
   background-color: palegoldenrod ;
-  height: 60px;
-  line-height: 40px;
   align-items: center;
   text-align: center;
   font-size: x-large;
@@ -86,47 +87,36 @@ th[scope="ball"] {
   justify-content: space-around;
   align-items: center;
   margin-top: 50px;
-  background-color: cyan;
-  font-size: larger;
+  background-color: black;
+  border-radius: 20%;
+  border: 1px solid white;
+  width: 70%;
 }
 
 .inputText {
   width: 250px;
   height: 60px;
   line-height: 40px;
-  font-size: larger;
+  font-size: x-large;
   background-color: lightblue;
   text-align: center;
-}
-
-/* .team {
-    text-align: center;
-  } */
-
-.function {
-  text-align: center;  
+  font-family: 'STLiti';
 }
 
 /* triangles */
 .triangle {
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 70px;
   line-height: 40px;
   align-items: center;
   text-align: center;
   background-color: honeydew;
   writing-mode: vertical-lr;
-  align-items: center;
   float: left;
   color: grey;
   font-size: x-large;
 }
 
-/* .upTriangle {
-      width: 0;
-      height: 0;
-      border-top: 20px solid black;
-      border-bottom: 20px solid black;
-      border-left: 30px solid red;
-      border-right: 10px solid transparent;
-    } */
+.function {
+  text-align: center;
+}

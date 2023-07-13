@@ -1,7 +1,12 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: darkgrey;
-  }
+  font-family: Arial, sans-serif;
+  background-color: darkgrey;
+}
+
+button {
+  padding: inherit;
+  border-style: none;
+}
 
 table {
   display: flex;
@@ -10,6 +15,35 @@ table {
 
 h1 {
   text-align: center;
+}
+
+.score {
+  background-color: beige;
+  color: brown;
+  width: 60px;
+  height: 60px;
+  line-height: 40px;
+  font-size: xx-large;
+}
+
+.inning {
+  background-color: honeydew;
+  width: 60px;
+  height: 60px;
+  line-height: 40px;
+  align-items: center;
+  text-align: center;
+  font-size: x-large;
+}
+
+.ball {
+  background-color: palegoldenrod;
+  width: 30px;
+  height: 60px;
+  line-height: 40px;
+  align-items: center;
+  text-align: center;
+  font-size: x-large;
 }
 
 th[scope="score"] {
@@ -28,46 +62,67 @@ th[scope="inning"] {
   align-items: center;
   text-align: center;
 }
-  
-  .scoreboard {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 50px;
-    background-color:cyan;
-    font-size: larger;
-  }
 
-  .inputText {
-    width: 300px;
-    height: 60px;
-    line-height: 40px;
-    font-size: larger;
-    background-color: lightblue;
-    text-align: center;
-  }
-  
-  /* .team {
+th[scope="out"] {
+  background-color: lightblue;
+  width: 60px;
+  height: 60px;
+  line-height: 40px;
+  align-items: center;
+  text-align: center;
+}
+
+th[scope="ball"] {
+  background-color: palegoldenrod ;
+  height: 60px;
+  line-height: 40px;
+  align-items: center;
+  text-align: center;
+  font-size: x-large;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+  background-color: cyan;
+  font-size: larger;
+}
+
+.inputText {
+  width: 250px;
+  height: 60px;
+  line-height: 40px;
+  font-size: larger;
+  background-color: lightblue;
+  text-align: center;
+}
+
+/* .team {
     text-align: center;
   } */
 
-  .score {
-    font-size: larger;
-  }
+.function {
+  text-align: center;  
+}
 
-  .function {
-    text-align: center;
-  }
+/* triangles */
+.triangle {
+  width: 60px;
+  height: 60px;
+  line-height: 40px;
+  align-items: center;
+  text-align: center;
+  background-color: honeydew;
+  writing-mode: vertical-lr;
+  align-items: center;
+  float: left;
+  color: grey;
+  font-size: x-large;
+}
 
-  /* triangles */
-  .triangle {
-    writing-mode: vertical-lr;
-    align-items: center;
-    float: left;
-    color: grey;
-    font-size:x-large;
-  }
-    /* .upTriangle {
+/* .upTriangle {
       width: 0;
       height: 0;
       border-top: 20px solid black;
@@ -75,8 +130,3 @@ th[scope="inning"] {
       border-left: 30px solid red;
       border-right: 10px solid transparent;
     } */
-  
-  button {
-    padding: inherit;
-    font-size: 20px;
-  }

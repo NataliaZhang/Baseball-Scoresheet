@@ -3,6 +3,8 @@ var score = {
   home: 0,
   away: 0,
   inning: 1,  // also formalized as score for simplicity
+  strike: 0,
+  ball: 0,
   history: []
 };
 
@@ -10,23 +12,49 @@ function updateScoreboard() {
   document.getElementById("homeScore").textContent = score.home;
   document.getElementById("awayScore").textContent = score.away;
   document.getElementById("inning").textContent = Math.ceil(score.inning / 2);
+  document.getElementById("strike").textContent = score.strike;
+  document.getElementById("ball").textContent = score.ball;
 }
 
 function incrementScore(team) {
+  score.history.push({ home:score.home, away:score.away, 
+    inning:score.inning, strike:score.strike, ball:score.ball });
   score[team]++;
-  score.history.push({ team: team }); // 将增加计分的操作记录到历史数组
   updateScoreboard();
   checkTriangles();
-  
+}
+
+function decrementScore(team) {
+  if (score[team] > 0){
+    score.history.push({ home:score.home, away:score.away, 
+    inning:score.inning, strike:score.strike, ball:score.ball });
+    score[team]--;
+    updateScoreboard();
+    checkTriangles();
+  }
+    
 }
 
 function undo() {
   if (score.history.length > 0) {
-    var lastAction = score.history.pop(); // 取出最后一次的操作记录
-    score[lastAction.team]--;
+    var lastState = score.history.pop();
+    score.home = lastState.home;
+    score.away = lastState.away;
+    score.inning = lastState.inning;
+    score.strike = lastState.strike;
+    score.ball = lastState.ball;
     updateScoreboard();
     checkTriangles();
   }
+}
+
+function resetBall() {
+  score.history.push({ home:score.home, away:score.away, 
+    inning:score.inning, strike:score.strike, ball:score.ball });
+  score.ball = 0;
+  score.strike = 0;
+  updateScoreboard();
+  checkTriangles();
 }
 
 function checkTriangles() {

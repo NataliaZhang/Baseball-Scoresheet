@@ -14,35 +14,41 @@
       <th>
         <input type="text" class="inputText">
       </th>
-      <th scope="score">
-        <span id="homeScore" class="score">0</span>
-        <button onclick="incrementScore('home')">+</button>
+      <th>
+        <button id="homeScore" class="score" onclick="incrementScore('home')">0</button>
       </th>
-      <th scope="inning">
+      <th>
         <div class="triangle">
           <span id="upTriangle">&#9650</span>
           <span id="downTriangle">&#9660</span>
         </div>
+      </th>
+      <th scope="ball">
+        <button id="-ball" class="ball" onclick="decrementScore('ball')">B</button>
+        <button class="ball" onclick="resetBall()">-</button>
+        <button id="-strike" class="ball" onclick="decrementScore('strike')">S</button>
       </th>
     </tr>
     <tr>
       <th>
         <input type="text" class="inputText">
       </th>
-      <th scope="score">
-        <span id="awayScore" class="score">0</span>
-        <button onclick="incrementScore('away')">+</button>
+      <th>
+        <button id="awayScore" class="score" onclick="incrementScore('away')">0</button>
       </th>
-      <th scope="inning">
-        <span id="inning" class="score">1</span>
-        <button onclick="incrementScore('inning')">+</button>
+      <th>
+        <button id="inning" class="inning" onclick="incrementScore('inning')">1</button>
+      </th>
+      <th scope="ball">
+        <button id="ball" class="ball" onclick="incrementScore('ball')">0</button>
+        <button class="ball" onclick="resetBall()">-</button>
+        <button id="strike" class="ball" onclick="incrementScore('strike')">0</button>
       </th>
     </tr>
   </table>
   
   <div class="function">
-    <button onclick="checkTriangles()">开始</button>
-    <button onclick="undo()">撤销</button>
+    <button class = function onclick="undo()"><img src="./img/undo.png" height="30px"></button>
   </div>
 
   <script src="count.js"></script>

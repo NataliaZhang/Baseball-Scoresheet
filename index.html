@@ -9,30 +9,52 @@
 </head>
 <body>
   <h1>棒球计分</h1>
-  <div id="teamNames">
-    <label for="homeTeam">主队：</label>
-    <span id="homeTeamName">主队</span>
-    <button onclick="editTeamName('home')">编辑</button>
-    <br>
-    <label for="awayTeam">客队：</label>
-    <span id="awayTeamName">客队</span>
-    <button onclick="editTeamName('away')">编辑</button>
-  </div>
+  <table id="scoreboard">
+    <tr>
+      <th>
+        <input type="text" class="inputText">
+      </th>
+      <th scope="score">
+        <span id="homeScore" class="score">0</span>
+        <button onclick="incrementScore('home')">+</button>
+      </th>
+    </tr>
+    <tr>
+      <th>
+        <input type="text" class="inputText">
+      </th>
+      <th scope="score">
+        <span id="awayScore" class="score">0</span>
+        <button onclick="incrementScore('away')">+</button>
+      </th>
+    </tr>
+  </table>
+  
   <div id="scoreboard">
-    <div class="team">
-      <h2>主队</h2>
-      <button onclick="incrementScore('home')">+</button>
-      <span id="homeScore">0</span>
-      <button onclick="decrementScore('home')">-</button>
+    <div>
+      <label for="homeTeam">主队</label>
+      <span id="homeTeamName">
+        <input type="text" class="inputText">
+      </span>
+      <span class="team">
+        <span id="homeScore">0</span>
+        <button onclick="incrementScore('home')">+</button>
+      </span>
     </div>
-    <div class="team">
-      <h2>客队</h2>
-      <button onclick="incrementScore('away')">+</button>
-      <span id="awayScore">0</span>
-      <button onclick="decrementScore('away')">-</button>
+    <div>
+      <label for="awayTeam">客队</label>
+      <span id="awayTeamName">
+        <input type="text" class="inputText">
+      </span>
+      <span class="team">
+        <button onclick="incrementScore('away')">+</button>
+        <span id="awayScore">0</span>
+      </span>
     </div>
   </div>
-  <button onclick="undo()">撤销</button>
+  <div class="function">
+    <button onclick="undo()">撤销</button>
+  </div>
 
   <script src="count.js"></script>
 </body>

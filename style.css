@@ -19,6 +19,15 @@ th[scope="score"] {
   height: 60px;
   line-height: 40px;
 }
+
+th[scope="inning"] {
+  background-color: honeydew;
+  width: 60px;
+  height: 60px;
+  line-height: 40px;
+  align-items: center;
+  text-align: center;
+}
   
   .scoreboard {
     display: flex;
@@ -26,14 +35,14 @@ th[scope="score"] {
     align-items: center;
     margin-top: 50px;
     background-color:cyan;
-    font-size: large;
+    font-size: larger;
   }
 
   .inputText {
     width: 300px;
     height: 60px;
     line-height: 40px;
-    font-size: large;
+    font-size: larger;
     background-color: lightblue;
     text-align: center;
   }
@@ -49,8 +58,25 @@ th[scope="score"] {
   .function {
     text-align: center;
   }
+
+  /* triangles */
+  .triangle {
+    writing-mode: vertical-lr;
+    align-items: center;
+    float: left;
+    color: grey;
+    font-size:x-large;
+  }
+    /* .upTriangle {
+      width: 0;
+      height: 0;
+      border-top: 20px solid black;
+      border-bottom: 20px solid black;
+      border-left: 30px solid red;
+      border-right: 10px solid transparent;
+    } */
   
   button {
-    padding:initial;
-    font-size: 18px;
+    padding: inherit;
+    font-size: 20px;
   }

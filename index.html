@@ -18,6 +18,12 @@
         <span id="homeScore" class="score">0</span>
         <button onclick="incrementScore('home')">+</button>
       </th>
+      <th scope="inning">
+        <div class="triangle">
+          <span id="upTriangle">&#9650</span>
+          <span id="downTriangle">&#9660</span>
+        </div>
+      </th>
     </tr>
     <tr>
       <th>
@@ -27,35 +33,19 @@
         <span id="awayScore" class="score">0</span>
         <button onclick="incrementScore('away')">+</button>
       </th>
+      <th scope="inning">
+        <span id="inning" class="score">1</span>
+        <button onclick="incrementScore('inning')">+</button>
+      </th>
     </tr>
   </table>
   
-  <div id="scoreboard">
-    <div>
-      <label for="homeTeam">主队</label>
-      <span id="homeTeamName">
-        <input type="text" class="inputText">
-      </span>
-      <span class="team">
-        <span id="homeScore">0</span>
-        <button onclick="incrementScore('home')">+</button>
-      </span>
-    </div>
-    <div>
-      <label for="awayTeam">客队</label>
-      <span id="awayTeamName">
-        <input type="text" class="inputText">
-      </span>
-      <span class="team">
-        <button onclick="incrementScore('away')">+</button>
-        <span id="awayScore">0</span>
-      </span>
-    </div>
-  </div>
   <div class="function">
+    <button onclick="checkTriangles()">开始</button>
     <button onclick="undo()">撤销</button>
   </div>
 
   <script src="count.js"></script>
+  <script src="unload.js"></script>
 </body>
 </html>

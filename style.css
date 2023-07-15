@@ -1,3 +1,13 @@
+
+@font-face {
+  font-family: 'electronicFont2';
+  src: url("font/DS-Digital/DS-DIGIB-2.ttf");
+}
+@font-face {
+  font-family: 'electronicFont1';
+  src: url("font/DS-Digital/DS-DIGI-1.ttf");
+}
+
 body {
   font-family: Arial, sans-serif;
   background-color: black;
@@ -23,15 +33,17 @@ h1 {
   text-align: center;
   font-family:'Microsoft YaHei';
   color:aliceblue;
+  text-shadow: 8px, 10px, aliceblue;
 }
 
 .score {
   background-color: beige;
   color: brown;
-  width:max-content;
+  width: 50px;
   height: 70px;
   line-height: 40px;
-  font-size: xx-large;
+  font-size: xxx-large;
+  font-family: 'electronicFont2';
 }
 
 .inning {
@@ -41,16 +53,26 @@ h1 {
   line-height: 40px;
   align-items: center;
   text-align: center;
-  font-size: x-large;
+  font-size: xxx-large;
+  font-family: 'electronicFont1';
 }
 
 .ball {
   background-color: palegoldenrod;
-  width: 30px;
+  width: 25px;
   height: 50px;
   align-items: center;
   text-align: center;
-  font-size: x-large;
+  font-size: xx-large;
+  font-family: 'electronicFont2';
+}
+.Ball {
+  background-color: palegoldenrod;
+  width: 25px;
+  height: 50px;
+  align-items: center;
+  text-align: center;
+  font-size: xx-large;
 }
 
 th[scope="score"] {
@@ -81,7 +103,6 @@ th[scope="ball"] {
   background-color: palegoldenrod ;
   align-items: center;
   text-align: center;
-  font-size: x-large;
 }
 
 .scoreboard {
@@ -90,7 +111,7 @@ th[scope="ball"] {
   display: block;
   text-align: center;
   align-items: center;
-  position:fixed;
+  position: absolute;
   width: 70%;
   margin: auto;
   margin-left: 15%;

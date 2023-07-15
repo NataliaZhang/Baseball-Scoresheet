@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   <title>棒垒球计分板</title>
   <link rel="stylesheet" type="text/css" href="style.css">
 
@@ -12,7 +12,6 @@
 <body>
   <div class="scoreboard">
     <h1>棒垒球计分板</h1>
-    <h1> </h1>
     <table>
       <tr>
         <th>
@@ -28,9 +27,9 @@
           </div>
         </th>
         <th scope="ball">
-          <button id="-ball" class="ball" onclick="decrementScore('ball')">B</button>
+          <button id="-ball" class="Ball" onclick="decrementScore('ball')">B</button>
           <button class="ball" onclick="resetBall()">-</button>
-          <button id="-strike" class="ball" onclick="decrementScore('strike')">S</button>
+          <button id="-strike" class="Ball" onclick="decrementScore('strike')">S</button>
         </th>
       </tr>
       <tr>

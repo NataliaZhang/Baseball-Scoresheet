@@ -42,49 +42,51 @@ h1 {
   width: 50px;
   height: 70px;
   line-height: 40px;
-  font-size: xxx-large;
+  font-size: xx-large;
   font-family: 'electronicFont2';
 }
 
 .inning {
-  background-color: honeydew;
+  background-color: beige;
   width: 40px;
   height: 70px;
   line-height: 40px;
   align-items: center;
   text-align: center;
-  font-size: xxx-large;
+  font-size: xx-large;
   font-family: 'electronicFont1';
 }
 
 .ball {
-  background-color: palegoldenrod;
+  background-color: beige;
   width: 25px;
-  height: 50px;
   align-items: center;
   text-align: center;
   font-size: xx-large;
-  font-family: 'electronicFont2';
+  font-family: 'electronicFont1';
 }
 .Ball {
-  background-color: palegoldenrod;
+  background-color: beige;
   width: 25px;
-  height: 50px;
   align-items: center;
   text-align: center;
   font-size: xx-large;
+}
+
+th {
+  border: 5px solid chocolate;
 }
 
 th[scope="score"] {
   background-color: beige;
   color: brown;
-  width:fit-content;
+  width: fit-content;
   height: 60px;
   line-height: 40px;
 }
 
 th[scope="inning"] {
-  background-color: honeydew;
+  background-color: beige;
   height: 60px;
   line-height: 40px;
   align-items: center;
@@ -92,7 +94,7 @@ th[scope="inning"] {
 }
 
 th[scope="out"] {
-  background-color: lightblue;
+  background-color: beige;
   height: 60px;
   line-height: 40px;
   align-items: center;
@@ -100,7 +102,7 @@ th[scope="out"] {
 }
 
 th[scope="ball"] {
-  background-color: palegoldenrod ;
+  background-color: beige ;
   align-items: center;
   text-align: center;
 }
@@ -120,7 +122,7 @@ th[scope="ball"] {
   background-color: rgba(0,0,0,0.6);
   border-radius: 5%;
   transition: 0.2s;
-  border: 1px solid white;
+  border: 5px solid white;
   line-height: 40px;
 }
 
@@ -129,7 +131,7 @@ th[scope="ball"] {
   height: 60px;
   line-height: 40px;
   font-size: x-large;
-  background-color: lightblue;
+  background-color: beige;
   text-align: center;
   font-family: 'STLiti';
 }
@@ -141,7 +143,7 @@ th[scope="ball"] {
   line-height: 40px;
   align-items: center;
   text-align: center;
-  background-color: honeydew;
+  background-color: beige;
   writing-mode: vertical-lr;
   float: left;
   color: grey;

@@ -14,7 +14,8 @@ body {
   display: inline;
   background: url("./img/background1.jpg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
+  background-attachment:fixed;
   align-items: center;
   text-align: center;
 }
@@ -116,10 +117,11 @@ th[scope="ball"] {
   text-align: center;
   align-items: center;
   position: absolute;
-  width: 80%;
-  margin: auto;
-  margin-left: 10%;
-  padding: 20px, 50px;
+  top:50%;
+  left:50%;
+  margin-left:-600px;
+  margin-top:-170px;
+  width: 1200px;
   background-color: rgba(0,0,0,0.6);
   border-radius: 5%;
   transition: 0.2s;

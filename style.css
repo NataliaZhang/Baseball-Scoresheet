@@ -32,15 +32,16 @@ table {
 h1 {
   text-align: center;
   font-family:'Microsoft YaHei';
+  font-size: 40px;
   color:aliceblue;
-  text-shadow: 8px, 10px, aliceblue;
+  text-shadow: 0 3px 0px rgba(255,255,255,0.4);
 }
 
 .score {
   background-color: beige;
   color: brown;
-  width: 50px;
-  height: 70px;
+  width: 40px;
+  height: 60px;
   line-height: 40px;
   font-size: xx-large;
   font-family: 'electronicFont2';
@@ -49,7 +50,7 @@ h1 {
 .inning {
   background-color: beige;
   width: 40px;
-  height: 70px;
+  height: 60px;
   line-height: 40px;
   align-items: center;
   text-align: center;
@@ -74,7 +75,8 @@ h1 {
 }
 
 th {
-  border: 5px solid chocolate;
+  border: 5px solid black;
+  border-radius: 5%;
 }
 
 th[scope="score"] {
@@ -114,10 +116,9 @@ th[scope="ball"] {
   text-align: center;
   align-items: center;
   position: absolute;
-  width: 70%;
+  width: 80%;
   margin: auto;
-  margin-left: 15%;
-  margin-top: 10%;
+  margin-left: 10%;
   padding: 20px, 50px;
   background-color: rgba(0,0,0,0.6);
   border-radius: 5%;
@@ -128,18 +129,19 @@ th[scope="ball"] {
 
 .inputText {
   width: auto;
-  height: 60px;
+  height: 54px;
   line-height: 40px;
   font-size: x-large;
+  font-family: 'STLiti';
   background-color: beige;
   text-align: center;
-  font-family: 'STLiti';
+  word-break: break-all;
 }
 
 /* triangles */
 .triangle {
   width: 40px;
-  height: 70px;
+  height: 60px;
   line-height: 40px;
   align-items: center;
   text-align: center;

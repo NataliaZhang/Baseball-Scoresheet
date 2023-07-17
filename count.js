@@ -19,7 +19,13 @@ function updateScoreboard() {
 function incrementScore(team) {
   score.history.push({ home:score.home, away:score.away, 
     inning:score.inning, strike:score.strike, ball:score.ball });
-  score[team]++;
+  if ((team == 'ball' && score[team] == 3) || (team == 'strike' && score[team] == 2)) {
+    score['ball'] = 0;
+    score['strike'] = 0;
+  }
+  else {
+    score[team]++;
+  }
   updateScoreboard();
   checkTriangles();
 }
